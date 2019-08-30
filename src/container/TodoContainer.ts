@@ -1,12 +1,12 @@
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
-import { IUIState } from '../common/types';
+import { IReduxState } from '../common/types';
 import { toggleSwitch } from '../actions/UIAction';
 import Todo from '../pages/Todo';
 
-function mapStateToProps(state: IUIState) {
+function mapStateToProps(state: IReduxState) {
 	return {
-		toggle: state.toggle
+		toggle: state.ui.toggle
 	};
 }
 

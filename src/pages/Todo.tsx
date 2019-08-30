@@ -11,8 +11,8 @@ export default class Todo extends React.Component<IProps> {
 		console.log(this.props)
 		return (
 			<div>
-				<div>{toggle ? 'True' : 'False'}</div>
-				<input type="checkbox" value={toggle ? 'true' : 'false'} onChange={toggleSwitch} />
+				<div>{`Toggle: ${toggle ? 'True' : 'False'}`}</div>
+				<input type="checkbox" onChange={toggleSwitch} />
 			</div>
 		);
 	};

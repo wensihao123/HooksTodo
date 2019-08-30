@@ -9,7 +9,7 @@ export function uiReducer(state: IUIState = initialState, action: AnyAction): IU
 	switch (action.type) {
 		case 'toggle':
 			return Object.assign({}, state, {
-				locale: action.value
+				toggle: action.value
 			});
 		default:
 			return state;
