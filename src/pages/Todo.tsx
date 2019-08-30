@@ -1,5 +1,4 @@
 import React from 'react';
-import '../css/App.css';
 interface IProps {
 	toggle: boolean;
 	toggleSwitch: () => void;
@@ -12,7 +11,7 @@ export default class Todo extends React.Component<IProps> {
 		return (
 			<div>
 				<div>{`Toggle: ${toggle ? 'True' : 'False'}`}</div>
-				<input type="checkbox" onChange={toggleSwitch} />
+				<input type="checkbox" onChange={toggleSwitch} checked={toggle}/>
 			</div>
 		);
 	};
